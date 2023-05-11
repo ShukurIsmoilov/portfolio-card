@@ -1,0 +1,110 @@
+/* Fonts for card */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* normalizing css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  min-height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-pattern {
+  position: absolute;
+  z-index: 0;
+  height: 100em;
+  width: 100em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-pattern-top {
+  background-image: url("../images/bg-pattern-top.svg");
+  top: -50em;
+  left: -50em;
+}
+.bg-pattern-bottom {
+  background-image: url("../images/bg-pattern-top.svg");
+  bottom: -50em;
+  right: -50em;
+}
+
+.card {
+  position: relative;
+  z-index: 10;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 80px 48px 20px 48px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(229, 23%, 23%);
+  text-align: center;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.card-name {
+  margin: 0 auto 10px auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-name span {
+  margin-left: 5px;
+  font-weight: normal;
+  color: hsl(227, 10%, 46%);
+}
+
+.card-city {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-numbers {
+  position: relative;
+  list-style: none;
+  border-top: 1px solid hsla(227, 10%, 46%, 0.379);
+  width: 350px;
+  left: -48px;
+  padding: 24px 48px 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-numbers span {
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: hsl(227, 10%, 46%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
